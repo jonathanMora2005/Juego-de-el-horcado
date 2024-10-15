@@ -99,6 +99,10 @@ class MainActivity2 : AppCompatActivity() {
         }
         t.text = SingertonJoc.partida.paraulaDisplayed
         lt.text = lt.text.toString() + "," + pt.text.toString()
+        if(SingertonJoc.partida.miraGuanyador()) {
+            var i = Intent(AActivity@this, MainActivity4::class.java)
+            startActivity(i)
+        }
 
 
     }

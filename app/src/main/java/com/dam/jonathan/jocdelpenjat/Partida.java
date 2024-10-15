@@ -85,6 +85,9 @@ public class Partida {
         return  Paraula.indexOf(a) !=-1;
 
     }
+    public boolean miraGuanyador(){
+        return ParaulaDisplayed.indexOf("-") !=-1;
+    }
 
 
 
