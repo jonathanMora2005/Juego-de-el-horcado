@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.newmain)
         nom = findViewById(R.id.nom)
         paraula = findViewById(R.id.paraula)
         pista = findViewById(R.id.pista)
@@ -37,11 +37,7 @@ class MainActivity : AppCompatActivity() {
         t2 = findViewById(R.id.tt2)
         c = findViewById(R.id.c)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
     }
     fun f(view: View){
         ff.setBackgroundColor(Color.parseColor("#FF0000"))
